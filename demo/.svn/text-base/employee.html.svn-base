@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.3.1.min.css">
+    <link rel="stylesheet" href="css/themes/default/my-custom.min.css" />
+    <link rel="stylesheet"  href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).bind("mobileinit", function() {
+            $.mobile.defaultPageTransition = "none";
+        });
+    </script>
+    <script src="js/jquery.mobile-1.3.1.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="landing">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a class="ui-btn-left" href="login.html" data-icon="logout" data-iconpos="notext"></a>
+        <h1>Home</h1>
+        <a class="status-icon ui-icon-nodisc" data-iconpos="notext" data-icon="single-online" data-iconshadow="false"></a>
+        <a class="ui-btn-right" href="#landing" data-role="button" data-iconpos="notext" data-icon="refresh" data-inline="true"></a>
+    </div>
+    <div data-role="content" class="width100"><br/><br/>
+        <div><img src="images/HOME.png" width="100%" border="0"/></div>
+        <p class="index-title">What Is TSS Mobile Application ?</p>
+        <p class="index-content">'TSS Mobile Application' is a lite version of 'TSS Education System' for mobile device (Iphone or Android ). It aims to help Employees & Managers to get web system information via mobile device in time.</p>
+        <p class="index-title">Feature Enhancement</p>
+        <div class="index-content">
+            <p><b>·</b>&nbsp;Enhanced User Experience</p>
+            <p><b>·</b>&nbsp;Direct Report From DB2</p>
+            <p><b>·</b>&nbsp;Enhanced Interaction (System To User, User To User)</p>
+        </div>
+        <br/>
+        <p class="index-content">Your last synchronized date <span class="fontblue">2013-6-16 16:14</span></p>
+    </div>
+    <div data-role="footer"  data-position="fixed" data-theme="a">
+       <div data-role="navbar" class="nav-mycustom">
+            <ul>
+                <li><a href="#profile" class="mycustom-profile" data-icon="custom">Profile</a></li>
+                <li><a href="#class" class="mycustom-class" data-icon="custom">Class</a></li>
+                <li><a href="#roadmap" class="mycustom-skill" data-icon="custom">Roadmap</a></li>
+                <li><a href="#Alerts" class="mycustom-alerts" data-icon="custom">Alerts</a><span class="alerts-size">1</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="profile">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <h3>Profile</h3>
+        <a class="ui-btn-left" href="#landing" data-icon="home" data-iconpos="notext"></a>
+        <a class="status-icon ui-icon-nodisc" data-iconpos="notext" data-icon="single-online" data-iconshadow="false"></a>
+        <a class="ui-btn-right" href="#landing" data-role="button" data-iconpos="notext" data-icon="refresh" data-inline="true"></a>
+    </div>
+    <div data-role="content">
+        <p>Your skill gap is <span class="highlight">20%</span>.<p>
+        <p>Your primary job role is <span class="highlight">Remote Support (SW L1.5)</span>, and selected platforms:</p>
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#category1">DB2<span class="ui-li-count">30%</span></a></li>
+            <li><a href="#category1">Websphere<span class="ui-li-count">30%</span></a></li>
+            <li><a href="#category1">System x<span class="ui-li-count">30%</span></a></li>
+            <li><a href="#category1">Power<span class="ui-li-count">30%</span></a></li>
+            <li><a href="#category1">Cisco<span class="ui-li-count">30%</span></a></li>
+            <li><a href="#category1">Mainframe<span class="ui-li-count">30%</span></a></li>
+            <li><a href="#category1">Storage Disk<span class="ui-li-count">30%</span></a></li>
+        </ul>
+        <div>Your secondary job role is <span class="highlight">Field Support (SW)</span>, and selected platforms:</div>
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#category1">Lotus<span class="ui-li-count">30%</span></a></li>
+            <li><a href="#category1">Solution<span class="ui-li-count">30%</span></a></li>
+            <li><a href="#category1">Lotus<span class="ui-li-count">30%</span></a></li>
+        </ul>
+    </div>
+    <div data-role="footer"  data-position="fixed">
+       <div data-role="navbar" class="nav-mycustom">
+            <ul>
+                <li><a href="#profile" class="ui-btn-active ui-state-persist mycustom-profile" data-icon="custom">Profile</a></li>
+                <li><a href="#class" class="mycustom-class" data-icon="custom">Class</a></li>
+                <li><a href="#roadmap" class="mycustom-skill" data-icon="custom">Roadmap</a></li>
+                <li><a href="#Alerts" class="mycustom-alerts" data-icon="custom">Alerts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="category1">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <h1>Category</h1>
+        <a class="ui-btn-left" href="#profile" data-icon="arrow-l" data-iconpos="notext"></a>
+    </div>
+    <div data-role="content">
+        <p class="highlight">Remote Support (SW L1.5) - Websphere</p>
+        <div data-role="collapsible-set" data-theme="b" data-content-theme="d">
+            <div data-role="collapsible" data-collapsed="false">
+                <h2 class="ui-li-has-count">WAS V7.x Advanced (Distributed)<span class="ui-li-count ui-btn-up-c ui-btn-corner-all">30%</span></h2>
+                <table  class="tableshow center" cellspacing="0" width="100%">
+                    <tr><th></th><th>Class</th><th>Distance-ELearning</th></tr>
+                    <tr><th>Req</th><td>1/2</td><td>2/3</td></tr>
+                    <tr><th>Opt</th><td>1/2</td><td>2/3</td></tr>
+                </table>
+            </div>
+            <div data-role="collapsible">
+                <h2 class="ui-li-has-count">Web Services and SOA<span class="ui-li-count ui-btn-up-c ui-btn-corner-all">30%</span></h2>
+                <table  class="tableshow center" cellspacing="0" width="100%">
+                    <tr><th></th><th>Class</th><th>Distance-ELearning</th></tr>
+                    <tr><th>Req</th><td>1/2</td><td>2/3</td></tr>
+                    <tr><th>Opt</th><td>1/2</td><td>2/3</td></tr>
+                </table>
+            </div>
+            <div data-role="collapsible">
+                <h2 class="ui-li-has-count">WebSphere Portal V6.x Server<span class="ui-li-count ui-btn-up-c ui-btn-corner-all">30%</span></h2>
+                <table  class="tableshow center" cellspacing="0" width="100%">
+                    <tr><th></th><th>Class</th><th>Distance-ELearning</th></tr>
+                    <tr><th>Req</th><td>1/2</td><td>2/3</td></tr>
+                    <tr><th>Opt</th><td>1/2</td><td>2/3</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"  data-position="fixed">
+       <div data-role="navbar" class="nav-mycustom">
+            <ul>
+                <li><a href="#profile" class="ui-btn-active ui-state-persist mycustom-profile" data-icon="custom">Profile</a></li>
+                <li><a href="#class" class="mycustom-class" data-icon="custom">Class</a></li>
+                <li><a href="#roadmap" class="mycustom-skill" data-icon="custom">Roadmap</a></li>
+                <li><a href="#Alerts" class="mycustom-alerts" data-icon="custom">Alerts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="class">
+    <div data-role="header" data-position="fixed">
+        <h1>Class</h1>
+        <a class="ui-btn-left" href="#landing" data-icon="home" data-iconpos="notext"></a>
+        <a class="status-icon ui-icon-nodisc" data-iconpos="notext" data-icon="single-online" data-iconshadow="false"></a>
+        <a class="ui-btn-right" href="#landing" data-role="button" data-iconpos="notext" data-icon="refresh" data-inline="true"></a>
+    </div>
+    <div data-role="content">
+        <p class="highlight">Your Training Status</p>
+        <div data-role="collapsible-set" data-theme="b">
+            <div data-role="collapsible" data-collapsed="false">
+                <h2>My Elearning (Incomplete)</h2>
+                <ul data-role="listview">
+                    <li>Aruba Security and Authentication v2.2</li>
+                    <li>Communication Manager Trunk and Routing Administration</li>
+                    <li>VoIP for Avaya Self-Service Solutions</li>
+                </ul>
+            </div>
+             <div data-role="collapsible">
+                <h2>My Classroom (Registered)</h2>
+                <ul data-role="listview">
+                    <li>CORE Fundamentals</li>
+                    <li>Advanced Juniper Networks Routing in the Enterprise</li>
+                    <li>IBM System zGryphon EC Handson Service Training (MT 2817)</li>
+                </ul>
+            </div>
+        </div>
+        <ul data-role="listview" data-inset="true" class="class-list-view">
+            <li data-role="list-divider">Past 3 Months Elearning</li>
+            <li>
+                <div class="over-div img-list-circle">
+                    <div>
+                        <a href="#pastclassdetailinfo"><img src="images/icons/ws.png" height="60" width="60"><span>WebSphere<span class="small">Course:3</span></span></a>
+                        <a href="#pastclassdetailinfo"><img src="images/icons/tivoli.png" height="60" width="60"><span>Tivoli <span class="small">Course:3</span></span></a>
+                        <a href="#pastclassdetailinfo"><img src="images/icons/system-x.png" height="60" width="60"><span>System x <span class="small">Course:3</span></span></a>
+                        <a href="#pastclassdetailinfo"><img src="images/icons/storage software.png" height="60" width="60"><span>Storage Software <span class="small">Course:3</span></span></a>
+                        <a href="#pastclassdetailinfo"><img src="images/icons/storage disk.png" height="60" width="60"><span>Storage Disk <span class="small">Course:3</span></span></a>
+                        <a href="#pastclassdetailinfo"><img src="images/icons/RSS.png" height="60" width="60"><span>RSS<span class="small">Course:3</span></span></a>
+                        <a href="#pastclassdetailinfo"><img src="images/icons/powersys.png" height="60" width="60"><span>Power Systems<span class="small">Course:3</span></span></a>
+                        <a href="#pastclassdetailinfo"><img src="images/icons/OEM2.png" height="60" width="60"><span>OEM Software <span class="small">Course:3</span></span></a>
+                        <a href="#pastclassdetailinfo"><img src="images/icons/storage-tape.png" height="60" width="60"><span>Mandatory<span class="small">Course:3</span></span></a>
+                    </div>
+                </div>
+            </li>
+            <li data-role="list-divider">Future 3 Months Classroom</li>
+            <li>
+                <div class="over-div img-list-circle">
+                    <div>
+                        <a href="#pastclassdetailinfo"><img src="images/icons/cicso.png" height="60" width="60"><span>Cisco</span></a>
+                        <a href="#pastclassdetailinfo"><img src="images/icons/avaya.png" height="60" width="60"><span>Avaya</span></a>
+                        <a href="#pastclassdetailinfo"><img src="images/icons/Aruba.png" height="60" width="60"><span>Aruba</span></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div data-role="footer"  data-position="fixed">
+       <div data-role="navbar" class="nav-mycustom">
+            <ul>
+                <li><a href="#profile" class="mycustom-profile" data-icon="custom">Profile</a></li>
+                <li><a href="#class" class="ui-btn-active ui-state-persist mycustom-class" data-icon="custom">Class</a></li>
+                <li><a href="#roadmap" class="mycustom-skill" data-icon="custom">Roadmap</a></li>
+                <li><a href="#Alerts" class="mycustom-alerts" data-icon="custom">Alerts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="allclass">
+    <div data-role="header" data-position="fixed">
+        <h1>All Class</h1>
+        <a class="ui-btn-left" href="#class" data-icon="arrow-l" data-iconpos="notext"></a>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+            <li data-role="list-divider">Classroom</li>
+            <li><a href="#classdetail">Jul</a></li>
+            <li><a href="#classdetail">Aug</a></li>
+            <li><a href="#classdetail">Sep</a></li>
+            <li data-role="list-divider">E-learning</li>
+            <li><a href="#classdetail">June</a></li>
+            <li><a href="#classdetail">May</a></li>
+            <li><a href="#classdetail">Apr</a></li>
+        </ul>
+    </div>
+    <div data-role="footer"  data-position="fixed">
+       <div data-role="navbar" class="nav-mycustom">
+            <ul>
+                <li><a href="#profile" class="mycustom-profile" data-icon="custom">Profile</a></li>
+                <li><a href="#class" class="ui-btn-active ui-state-persist mycustom-class" data-icon="custom">Class</a></li>
+                <li><a href="#roadmap" class="mycustom-skill" data-icon="custom">Roadmap</a></li>
+                <li><a href="#Alerts" class="mycustom-alerts" data-icon="custom">Alerts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="classdetail">
+    <div data-role="header" data-position="fixed">
+        <h1>Classes</h1>
+        <a class="ui-btn-left" href="#class" data-icon="arrow-l" data-iconpos="notext"></a>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#classdetailinfo">
+                <img src="images/album-hc.jpg">
+                <h2>Cisco- Nexus Switches-Nexus Switches</h2>
+                <p>(Classroom, Australia, 2013-07-03~2013-07-04)</p>
+            </a></li>
+            <li><a href="#classdetailinfo">
+                <img src="images/album-hc.jpg">
+                <h2>DB2- Netezza-Netezza Skill Transfer</h2>
+                <p>(Classroom, Singapore, 2017-07-13~2013-07-14)</p>
+            </a></li>
+            <li><a href="#classdetailinfo">
+                <img src="images/album-hc.jpg">
+                <h2>System x- System x Service-Servicing IBM System x Servers - Part 2</h2>
+                <p>( Classroom,  India,  2013-07-22 ~ 2013-07-23 )</p>
+            </a></li>
+        </ul>
+    </div>
+    <div data-role="footer"  data-position="fixed">
+       <div data-role="navbar" class="nav-mycustom">
+            <ul>
+                <li><a href="#profile" class="mycustom-profile" data-icon="custom">Profile</a></li>
+                <li><a href="#class" class="ui-btn-active ui-state-persist mycustom-class" data-icon="custom">Class</a></li>
+                <li><a href="#roadmap" class="mycustom-skill" data-icon="custom">Roadmap</a></li>
+                <li><a href="#Alerts" class="mycustom-alerts" data-icon="custom">Alerts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="pastclassdetailinfo">
+    <div data-role="header" data-position="fixed">
+        <h1>E-Learning</h1>
+        <a class="ui-btn-left" href="#class" data-icon="arrow-l" data-iconpos="notext"></a>
+    </div>
+    <div data-role="content">
+        <p class="highlight">WebSphere</p>
+        <div data-role="collapsible-set" data-theme="b" data-content-theme="d">
+            <div data-role="collapsible" data-collapsed="false">
+                <h2>KT coaching workshop</h2>
+                <table class="tableshow width100" cellspacing="0">
+                    <tr><td>Global Code:</td><td>AVA00740WEN</td></tr>
+                    <tr><td>Duration:</td><td>40 Hours</td></tr>
+                </table>
+            </div>
+            <div data-role="collapsible">
+                <h2>Cisco Nexus 5548/5596 Switches features and troubleshooting procedures</h2>
+                <table class="tableshow width100" cellspacing="0">
+                    <tr><td>Global Code:</td><td>AVA00740WEN</td></tr>
+                    <tr><td>Duration:</td><td>40 Hours</td></tr>
+                </table>
+            </div>
+            <div data-role="collapsible">
+                <h2>Cisco Nexus 5548/5596 Switches features and troubleshooting procedures</h2>
+                <table class="tableshow width100" cellspacing="0">
+                    <tr><td>Global Code:</td><td>AVA00740WEN</td></tr>
+                    <tr><td>Duration:</td><td>40 Hours</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"  data-position="fixed">
+       <div data-role="navbar" class="nav-mycustom">
+            <ul>
+                <li><a href="#profile" class="mycustom-profile" data-icon="custom">Profile</a></li>
+                <li><a href="#class" class="ui-btn-active ui-state-persist mycustom-class" data-icon="custom">Class</a></li>
+                <li><a href="#roadmap" class="mycustom-skill" data-icon="custom">Roadmap</a></li>
+                <li><a href="#Alerts" class="mycustom-alerts" data-icon="custom">Alerts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="classdetailinfo">
+    <div data-role="header" data-position="fixed">
+        <h1>Classroom</h1>
+        <a class="ui-btn-left" href="#class" data-icon="arrow-l" data-iconpos="notext"></a>
+    </div>
+    <div data-role="content">
+        <p class="highlight">KT resolve</p>
+        <div data-role="collapsible-set" data-theme="b" data-content-theme="d">
+            <div data-role="collapsible" data-collapsed="false">
+                <h2>[Australia] Cisco Nexus 5548/5596 Switches features and troubleshooting procedures</h2>
+                <table class="tableshow width100" cellspacing="0">
+                    <tbody>
+                    <tr><td width="120">Class ID:</td><td>D00010-D4VN</td></tr>
+                    <tr><td>Global Code:</td><td>AVA00740WEN</td></tr>
+                    <tr><td>Class Status:</td><td>Available</td></tr>
+                    <tr><td>Location:</td><td>Australia</td></tr>
+                    <tr><td>Class Date:</td><td>08/13/2013-08/17/2013</td></tr>
+                    <tr><td>Duration:</td><td>40 Hours</td></tr>
+                    <tr><td>Enrollment Deadline:</td><td>09/10/2010</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div data-role="collapsible">
+                <h2>[Australia] Cisco Nexus 5548/5596 Switches features and troubleshooting procedures</h2>
+                <table class="tableshow width100" cellspacing="0">
+                    <tbody>
+                    <tr><td width="120">Class ID:</td><td>D00010-D4VN</td></tr>
+                    <tr><td>Global Code:</td><td>AVA00740WEN</td></tr>
+                    <tr><td>Class Status:</td><td>Available</td></tr>
+                    <tr><td>Location:</td><td>Australia</td></tr>
+                    <tr><td>Class Date:</td><td>09/13/2013-09/17/2013</td></tr>
+                    <tr><td>Duration:</td><td>40 Hours</td></tr>
+                    <tr><td>Enrollment Deadline:</td><td>09/10/2010</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div data-role="collapsible">
+                <h2>[India] Cisco Nexus 5548/5596 Switches features and troubleshooting procedures</h2>
+                <table class="tableshow width100" cellspacing="0">
+                    <tbody>
+                    <tr><td width="120">Class ID:</td><td>D00010-D4VN</td></tr>
+                    <tr><td>Global Code:</td><td>AVA00740WEN</td></tr>
+                    <tr><td>Class Status:</td><td>Available</td></tr>
+                    <tr><td>Location:</td><td>India</td></tr>
+                    <tr><td>Class Date:</td><td>08/13/2013-08/17/2013</td></tr>
+                    <tr><td>Duration:</td><td>40 Hours</td></tr>
+                    <tr><td>Enrollment Deadline:</td><td>09/10/2010</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"  data-position="fixed">
+       <div data-role="navbar" class="nav-mycustom">
+            <ul>
+                <li><a href="#profile" class="mycustom-profile" data-icon="custom">Profile</a></li>
+                <li><a href="#class" class="ui-btn-active ui-state-persist mycustom-class" data-icon="custom">Class</a></li>
+                <li><a href="#roadmap" class="mycustom-skill" data-icon="custom">Roadmap</a></li>
+                <li><a href="#Alerts" class="mycustom-alerts" data-icon="custom">Alerts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="roadmap">
+    <div data-role="header" data-position="fixed">
+        <h1>Roadmap</h1>
+        <a class="ui-btn-left" href="#landing" data-icon="home" data-iconpos="notext"></a>
+        <a class="status-icon ui-icon-nodisc" data-iconpos="notext" data-icon="single-online" data-iconshadow="false"></a>
+        <a class="ui-btn-right" href="#landing" data-role="button" data-iconpos="notext" data-icon="refresh" data-inline="true"></a>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" class="class-list-view">
+            <li data-role="list-divider">Mandatory/General</li>
+            <li>
+                <div class="over-div img-list-circle">
+                    <div>
+                        <a href="#roadmapPlatform"><img src="images/icons/storage software.png"><span>Mandatory</span></a>
+                        <a href="#roadmapPlatform"><img src="images/icons/storage-tape.png"><span>General</span></a>
+                    </div>
+                </div>
+            </li>
+            <li data-role="list-divider">IBM Logo</li>
+            <li>
+                <div class="over-div img-list-circle">
+                    <div>
+                        <a href="#roadmapPlatform"><img src="images/icons/storage networking.png" height="60" width="60"><span>Storage Networking</span></a>
+                        <a href="#roadmapPlatform"><img src="images/icons/storage disk.png" height="60" width="60"><span>Storage</span></a>
+                        <a href="#roadmapPlatform"><img src="images/icons/system-x.png" height="60" width="60"><span>System x</span></a>
+                        <a href="#roadmapPlatform"><img src="images/icons/powersys.png" height="60" width="60"><span>Power Systems</span></a>
+                    </div>
+                </div>
+            </li>
+            <li data-role="list-divider">Multi-Vendor</li>
+            <li>
+                <div class="over-div img-list-circle">
+                    <div>
+                        <a href="#roadmapPlatform"><img src="images/icons/RSS.png" height="60" width="60"><span>RSS</span></a>
+                        <a href="#roadmapPlatform"><img src="images/icons/riverbed.png" height="60" width="60"><span>Riverbed</span></a>
+                        <a href="#roadmapPlatform"><img src="images/icons/cicso.png" height="60" width="60"><span>Cisco</span></a>
+                        <a href="#roadmapPlatform"><img src="images/icons/avaya.png" height="60" width="60"><span>Avaya</span></a>
+                        <a href="#roadmapPlatform"><img src="images/icons/Aruba.png" height="60" width="60"><span>Aruba</span></a>
+                    </div>
+                </div>
+            </li>
+            <li data-role="list-divider">Software</li>
+            <li>
+                <div class="over-div img-list-circle">
+                    <div>
+                        <a href="#roadmapPlatform"><img src="images/icons/ws.png" height="60" width="60"><span>WebSphere</span></a>
+                        <a href="#roadmapPlatform"><img src="images/icons/DB2.png" height="60" width="60"><span>DB2</span></a>
+                        <a href="#roadmapPlatform"><img src="images/icons/Lotus.png" height="60" width="60"><span>Lotus OEM Software</span></a>
+                        <a href="#roadmapPlatform"><img src="images/icons/tivoli.png" height="60" width="60"><span>Tivoli</span></a>
+                    </div>
+                </div>
+            </li></li><li data-role="list-divider">Solution</li>
+            <li>
+                <div class="over-div img-list-circle">
+                    <div>
+                        <a href="#roadmapPlatform"><img src="images/icons/solution.png" height="60" width="60"><span>Solution</span></a>
+                        <a href="#roadmapPlatform"><img src="images/icons/OEM2.png" height="60" width="60"><span>Software</span></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div data-role="footer"  data-position="fixed">
+       <div data-role="navbar" class="nav-mycustom">
+            <ul>
+                <li><a href="#profile" class="mycustom-profile" data-icon="custom">Profile</a></li>
+                <li><a href="#class" class="mycustom-class" data-icon="custom">Class</a></li>
+                <li><a href="#roadmap" class="ui-btn-active ui-state-persist mycustom-skill" data-icon="custom">Roadmap</a></li>
+                <li><a href="#Alerts" class="mycustom-alerts" data-icon="custom">Alerts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="roadmapPlatform">
+    <div data-role="header" data-position="fixed">
+        <h1>Category</h1>
+        <a class="ui-btn-left" href="#roadmap" data-icon="arrow-l" data-iconpos="notext"></a>
+    </div>
+    <div data-role="content" id="roadmapPlatformList_new">
+        <ul data-role="listview">
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">Mandatory</span><p>Websphere Application Server v8.x</p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere Virtual Enterprise V7.x</p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere Service Registry and Repository V7.x </p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere Process Server V7.x Basics (Distributed) </p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere Process Server V7.x Advanced (Distributed) </p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere Process Server V6.x Basics (Distributed) </p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere Process Server V6.x Advanced (Distributed) </p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere Portal V7.x Server Basics (Distributed)</p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere Portal V7.x Server Advanced (Distributed)</p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere Portal V6.x Server Basics (Distributed)</p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere Portal V6.x Server Advanced (Distributed)</p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere Message Broker V7.x Basics </p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere Message Broker V7 Advanced </p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere MQ Basics V7.x (Distributed) </p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere MQ Advanced V7.x (Distributed) </p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere Lombardi Edition 7.x Basics (Distributed)</p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere Enterprise Service Bus V7.x Basics </p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere Enterprise Service Bus V7.x Advanced </p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WebSphere Business Process Management V7.x Basics (Distributed)</p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>Web Services and SOA </p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WAS V8.x Basics (Distributed)</p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WAS V8.x Advanced (Distributed)</p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WAS V7.x Basics (Distributed)</p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WAS V7.x Advanced (Distributed)</p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WAS V6.x Basics (Distributed)</p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WAS V6.x Advanced (Distributed)</p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WAN Switching Products </p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>Wireless </p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>Wincor Nixdorf ATM Training</p></a></li>
+            <li><a href="#roadmapCategory"><img src="images/Generic2.png" height="43" width="58"/><span class="title">WAS</span><p>WestNet Learning </p></a></li>
+        </ul>
+    </div>
+    <div data-role="footer"  data-position="fixed">
+       <div data-role="navbar" class="nav-mycustom">
+            <ul>
+                <li><a href="#profile" class="mycustom-profile" data-icon="custom">Profile</a></li>
+                <li><a href="#class" class="mycustom-class" data-icon="custom">Class</a></li>
+                <li><a href="#roadmap" class="ui-btn-active ui-state-persist mycustom-skill" data-icon="custom">Roadmap</a></li>
+                <li><a href="#Alerts" class="mycustom-alerts" data-icon="custom">Alerts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="roadmapCategory">
+    <div data-role="header" data-position="fixed">
+        <h1>Category</h1>
+        <a class="ui-btn-left" href="#roadmapPlatform" data-icon="arrow-l" data-iconpos="notext"></a>
+    </div>
+    <div data-role="content">
+        <div class="topDiv">
+            <img src="images/category.jpg"/>
+            <p class="title">Websphere Application Server v8.x</p>
+            <p class="describe">Description</p>
+        </div>
+        <div class="separate"></div>
+        <div class="bottomDiv">
+            <div class="over-div img-list-circle">
+                <div>
+                    <div>
+                        <table class="tableshow" cellspacing="0">
+                            <caption>Remote Support (HW)</caption>
+                            <tr><th>Skill Name</th><th>SR</th><th>DM</th></tr>
+                            <tr><td>Aruba Basic Config</td><td>Req</td><th>C</th></tr>
+                            <tr><td>Aruba Redundancy v1.3</td><td>Opt</td><th>D</th></tr>
+                            <tr><td>Aruba Voice and Qos V1.1</td><td>Opt</td><th>D</th></tr>
+                            <tr><td>Aruba Security and Authentication v2.2</td><td>Req</td><th>C</th></tr>
+                            <tr><td>Aruba Stack v3</td><td>Opt</td><th>D</th></tr>
+                            <tr><td>Aruba Routing</td><td>Req</td><th>C</th></tr>
+                        </table>
+                    </div>
+                    <div>
+                        <table class="tableshow" cellspacing="0">
+                            <caption>Remote Support (SW Level 1)</caption>
+                            <tr><th>Skill Name</th><th>Requirement</th><th>DM</th></tr>
+                            <tr><td>Aruba Basic Config</td><td width="80">Required</td><th>C</th></tr>
+                            <tr><td>Aruba Redundancy v1.3</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Tunneled Node v2.2 </td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Voice and Qos V1.1</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Security and Authentication v2.2</td><td>Required</td><th>C</th></tr>
+                            <tr><td>Aruba Stack v3</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Routing</td><td>Required</td><th>C</th></tr>
+                        </table>
+                    </div>
+                    <div>
+                        <table class="tableshow" cellspacing="0">
+                            <caption>Location Support</caption>
+                            <tr><th>Skill Name</th><th>Requirement</th><th>DM</th></tr>
+                            <tr><td>Aruba Basic Config</td><td width="80">Required</td><th>C</th></tr>
+                            <tr><td>Aruba Redundancy v1.3</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Tunneled Node v2.2 </td><td>Required</td><th>C</th></tr>
+                            <tr><td>Aruba Voice and Qos V1.1</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Security and Authentication v2.2</td><td>Required</td><th>C</th></tr>
+                            <tr><td>Aruba Stack v3</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Routing</td><td>Required</td><th>C</th></tr>
+                        </table>
+                    </div>
+                    <div>
+                        <table class="tableshow" cellspacing="0">
+                            <caption>Region Support</caption>
+                            <tr><th>Skill Name</th><th>Requirement</th><th>DM</th></tr>
+                            <tr><td>Aruba Basic Config</td><td width="80">Required</td><th>C</th></tr>
+                            <tr><td>Aruba Redundancy v1.3</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Voice and Qos V1.1</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Security and Authentication v2.2</td><td>Required</td><th>C</th></tr>
+                            <tr><td>Aruba Stack v3</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Routing</td><td>Required</td><th>C</th></tr>
+                        </table>
+                    </div>
+                    <div>
+                        <table class="tableshow" cellspacing="0">
+                            <caption>Remote Support (SW Level 1.5)</caption>
+                            <tr><th>Skill Name</th><th>Requirement</th><th>DM</th></tr>
+                            <tr><td>Aruba Basic Config</td><td width="80">Required</td><th>C</th></tr>
+                            <tr><td>Aruba Redundancy v1.3</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Voice and Qos V1.1</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Security and Authentication v2.2</td><td>Required</td><th>C</th></tr>
+                            <tr><td>Aruba Stack v3</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Routing</td><td>Required</td><th>C</th></tr>
+                        </table>
+                    </div>
+                    <div>
+                        <table class="tableshow" cellspacing="0">
+                            <caption>Field Support (SSR)</caption>
+                            <tr><th>Skill Name</th><th>Requirement</th><th>DM</th></tr>
+                            <tr><td>Aruba Basic Config</td><td width="80">Required</td><th>C</th></tr>
+                            <tr><td>Aruba Redundancy v1.3</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Tunneled Node v2.2 </td><td>Required</td><th>C</th></tr>
+                            <tr><td>POE</td><td>Required</td><th>C</th></tr>
+                            <tr><td>Aruba Voice and Qos V1.1</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Stack v3</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Routing</td><td>Required</td><th>C</th></tr>
+                        </table>
+                    </div>
+                    <div>
+                        <table class="tableshow" cellspacing="0">
+                            <caption>Field Support (SW)</caption>
+                            <tr><th>Skill Name</th><th>Requirement</th><th>DM</th></tr>
+                            <tr><td>Aruba Basic Config</td><td width="80">Required</td><th>C</th></tr>
+                            <tr><td>Aruba Redundancy v1.3</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Tunneled Node v2.2 </td><td>Required</td><th>C</th></tr>
+                            <tr><td>Aruba Security and Authentication v2.2</td><td>Required</td><th>C</th></tr>
+                            <tr><td>Aruba Stack v3</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Routing</td><td>Required</td><th>C</th></tr>
+                        </table>
+                    </div>
+                    <div>
+                        <table class="tableshow" cellspacing="0">
+                            <caption>PFE</caption>
+                            <tr><th>Skill Name</th><th>Requirement</th><th>DM</th></tr>
+                            <tr><td>Aruba Basic Config</td><td width="80">Required</td><th>C</th></tr>
+                            <tr><td>Aruba Redundancy v1.3</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>POE</td><td>Required</td><th>C</th></tr>
+                            <tr><td>Aruba Voice and Qos V1.1</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Security and Authentication v2.2</td><td>Required</td><th>C</th></tr>
+                            <tr><td>Aruba Stack v3</td><td>Optional</td><th>D</th></tr>
+                            <tr><td>Aruba Routing</td><td>Required</td><th>C</th></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"  data-position="fixed">
+       <div data-role="navbar" class="nav-mycustom">
+            <ul>
+                <li><a href="#profile" class="mycustom-profile" data-icon="custom">Profile</a></li>
+                <li><a href="#class" class="mycustom-class" data-icon="custom">Class</a></li>
+                <li><a href="#roadmap" class="ui-btn-active ui-state-persist mycustom-skill" data-icon="custom">Roadmap</a></li>
+                <li><a href="#Alerts" class="mycustom-alerts" data-icon="custom">Alerts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="Alerts">
+    <div data-role="header" data-position="fixed">
+        <h1>Alerts</h1>
+        <a class="ui-btn-left" href="#landing" data-icon="home" data-iconpos="notext"></a>
+        <a class="status-icon ui-icon-nodisc" data-iconpos="notext" data-icon="single-offline" data-iconshadow="false"></a>
+        <a class="ui-btn-right" href="#landing" data-role="button" data-iconpos="notext" data-icon="refresh" data-inline="true"></a>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true" class="list-padding-right50 minHeight35">
+            <li data-role="list-divider">System Alerts</li>
+            <li>
+                <p class="title">New Category Created</p>
+                <p>The category name is WAS 8.0 which is in Websphere</p>
+                <p class="ui-li-aside">2013-6-1<button data-icon="trash" data-rel="dialog" data-iconpos="notext"></button></p>
+            </li>
+            <li class="newAlert">
+                <p class="title">System Maintenance</p>
+                <p>The system will not provide service between 14:00-19:00 this Friday</p>
+                <p class="ui-li-aside">2013-6-6<button data-icon="trash" data-rel="dialog" data-iconpos="notext"></button></p>
+            </li>
+            <li>
+                <a href="#systemAlerts" data-transition="slide">More</a>
+            </li>
+            <li data-role="list-divider">Your Alerts</li>
+            <li class="newAlert">
+                <p>Your profile has been verified by your manager</p>
+                <p class="ui-li-aside">2013-6-6<button data-icon="trash" data-rel="dialog" data-iconpos="notext"></button></p>
+            </li>
+            <li>
+                <a href="#yourAlerts" data-transition="slide">More</a>
+            </li>
+        </ul>
+    </div>
+    <div data-role="footer"  data-position="fixed">
+       <div data-role="navbar" class="nav-mycustom">
+            <ul>
+                <li><a href="#profile" class="mycustom-profile" data-icon="custom">Profile</a></li>
+                <li><a href="#class" class="mycustom-class" data-icon="custom">Class</a></li>
+                <li><a href="#roadmap" class="mycustom-skill" data-icon="custom">Roadmap</a></li>
+                <li><a href="#Alerts" class="ui-btn-active ui-state-persist mycustom-alerts" data-icon="custom">Alerts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="systemAlerts">
+    <div data-role="header" data-position="fixed">
+        <h1>System Alerts</h1>
+        <a class="ui-btn-left" href="#Alerts" data-icon="arrow-l" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+        <a class="ui-btn-right" href="#deleteDialog" data-icon="trash" data-rel="dialog"  data-icon="delete" data-iconpos="notext"></a>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" class="list-padding-right50 minHeight35">
+            <li>
+
+                <p class="title">New Category Created</p>
+                <p>The category name is WAS 8.0 which is in Websphere</p>
+                <p class="ui-li-aside">2013-6-1<button data-icon="trash" data-rel="dialog" data-iconpos="notext"></button></p>
+            </li>
+            <li>
+                <p class="title">System Maintenance</p>
+                <p>The system will not provide service between 14:00-19:00 this Friday</p>
+                <p class="ui-li-aside">2013-6-6<button data-icon="trash" data-rel="dialog" data-iconpos="notext"></button></p>
+            </li>
+            <li>
+                <p class="title">New Category Created</p>
+                <p>The category name is WAS 8.0 which is in Websphere</p>
+                <p class="ui-li-aside">2013-6-1<button data-icon="trash" data-rel="dialog" data-iconpos="notext"></button></p>
+            </li>
+            <li>
+                <p class="title">System Maintenance</p>
+                <p>The system will not provide service between 14:00-19:00 this Friday</p>
+                <p class="ui-li-aside">2013-6-6<button data-icon="trash" data-rel="dialog" data-iconpos="notext"></button></p>
+            </li>
+            <li>
+                <p class="title">New Category Created</p>
+                <p>The category name is WAS 8.0 which is in Websphere</p>
+                <p class="ui-li-aside">2013-6-1<button data-icon="trash" data-rel="dialog" data-iconpos="notext"></button></p>
+            </li>
+            <li>
+                <p class="title">System Maintenance</p>
+                <p>The system will not provide service between 14:00-19:00 this Friday</p>
+                <p class="ui-li-aside">2013-6-6<button data-icon="trash" data-rel="dialog" data-iconpos="notext"></button></p>
+            </li>
+        </ul>
+    </div>
+    <div data-role="footer"  data-position="fixed">
+       <div data-role="navbar" class="nav-mycustom">
+            <ul>
+                <li><a href="#profile" class="mycustom-profile" data-icon="custom">Profile</a></li>
+                <li><a href="#class" class="mycustom-class" data-icon="custom">Class</a></li>
+                <li><a href="#roadmap" class="mycustom-skill" data-icon="custom">Roadmap</a></li>
+                <li><a href="#Alerts" class="ui-btn-active ui-state-persist mycustom-alerts" data-icon="custom">Alerts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="yourAlerts">
+    <div data-role="header" data-position="fixed">
+        <h1>Your Alerts</h1>
+        <a class="ui-btn-left" href="#Alerts" data-icon="arrow-l" data-iconpos="notext" data-transition="slide" data-direction="reverse"></a>
+        <a class="ui-btn-right" href="#deleteDialog" data-icon="trash" data-rel="dialog"  data-icon="delete" data-iconpos="notext"></a>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" class="list-padding-right50 minHeight35">
+            <li>
+                <p>Your profile has been verified by your manager</p>
+                <p class="ui-li-aside">2013-6-6<button data-icon="trash" data-rel="dialog" data-iconpos="notext"></button></p>
+            </li>
+            <li>
+                <p>Your profile has been verified by your manager</p>
+                <p class="ui-li-aside">2013-6-6<button data-icon="trash" data-rel="dialog" data-iconpos="notext"></button></p>
+            </li>
+            <li>
+                <p>Your profile has been verified by your manager</p>
+                <p class="ui-li-aside">2013-6-6<button data-icon="trash" data-rel="dialog" data-iconpos="notext"></button></p>
+            </li>
+            <li>
+                <p>Your profile has been verified by your manager</p>
+                <p class="ui-li-aside">2013-6-6<button data-icon="trash" data-rel="dialog" data-iconpos="notext"></button></p>
+            </li>
+            <li>
+                <p>Your profile has been verified by your manager</p>
+                <p class="ui-li-aside">2013-6-6<button data-icon="trash" data-rel="dialog" data-iconpos="notext"></button></p>
+            </li>
+            <li>
+                <p>Your profile has been verified by your manager</p>
+                <p class="ui-li-aside">2013-6-6<button data-icon="trash" data-rel="dialog" data-iconpos="notext"></button></p>
+            </li>
+            <li>
+                <p>Your profile has been verified by your manager</p>
+                <p class="ui-li-aside">2013-6-6<button data-icon="trash" data-rel="dialog" data-iconpos="notext"></button></p>
+            </li>
+        </ul>
+    </div>
+    <div data-role="footer"  data-position="fixed">
+       <div data-role="navbar" class="nav-mycustom">
+            <ul>
+                <li><a href="#profile" class="mycustom-profile" data-icon="custom">Profile</a></li>
+                <li><a href="#class" class="mycustom-class" data-icon="custom">Class</a></li>
+                <li><a href="#roadmap" class="mycustom-skill" data-icon="custom">Roadmap</a></li>
+                <li><a href="#Alerts" class="ui-btn-active ui-state-persist mycustom-alerts" data-icon="custom">Alerts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div data-role="page" id="deleteDialog" data-close-btn="none">
+    <div data-role="header"><h1>Delete Message</h1></div>
+    <div data-role="content">
+        Do you want to delete all the messages?
+        <a data-rel="back" data-icon="check" data-role="button">Delete</a>
+        <a data-rel="back" data-icon="delete" data-role="button">Cancel</a>
+    </div>
+</div>
+
+</body>
+</html>
